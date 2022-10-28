@@ -10,19 +10,10 @@ import { CMS_NAME } from '../lib/constants'
 export default function Index({ allPosts, preview }) {
   const morePosts = allPosts.slice(1)
   return (
-    <>
-      <Layout preview={preview}>
-        <Head>
-          <title>Milind Soorya</title>
-        </Head>
-        <Container>
-          <Hero />
-
-          {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
-          {morePosts.length > 0 && <ArticlePanel posts={morePosts} />}
-        </Container>
-      </Layout>
-    </>
+    <Container>
+      <Hero />
+      {morePosts.length > 0 && <ArticlePanel posts={morePosts} />}
+    </Container>
   )
 }
 

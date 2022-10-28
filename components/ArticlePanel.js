@@ -29,11 +29,11 @@ export default function ArticlePanel({ posts }) {
       {sortedBlogPosts.map((blog) => (
         <BlogPost
           key={blog.slug}
-          image={blog.image}
+          image={blog.coverImage}
           title={blog.title}
-          summary={blog.summary}
+          summary={blog.excerpt}
           slug={blog.slug}
-          publishedAt={blog.publishedAt}
+          publishedAt={blog.date}
         />
       ))}
       <InternalLink href={'/blog'}>

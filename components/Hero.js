@@ -13,7 +13,6 @@ const socialMedias = [
     icon: <Twitter />,
     redirect: 'https://twitter.com/milindsoorya',
   },
-
   {
     name: 'LinkedIn',
     icon: <LinkedIn />,
